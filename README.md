@@ -8,6 +8,7 @@ A service that will convert a given integer(in the range of 1 - 3999) into its R
 
 - [Prerequisites](#prerequisites)
 - [How to Build and Run and Access The Project](#how-to-build-and-run-your-project)
+- [Dockerization](#dockerization)
 - [Engineering and Testing Methodology](#engineering-and-testing-methodology)
 - [Packaging Layout](#packaging-layout)
 - [Dependency Attribution](#dependency-attribution)
@@ -25,7 +26,7 @@ A service that will convert a given integer(in the range of 1 - 3999) into its R
 
 ---
 
-## How to Build and Run Your Project
+## How to Build and Run Project Local
 
 1. **Clone the Repository**:
    ```bash
@@ -41,6 +42,27 @@ A service that will convert a given integer(in the range of 1 - 3999) into its R
    npm run dev
    ```
 4. **Access the API: will be avalible in this address and format**
+   ```bash
+   http://localhost:8080/romannumeral?number={integer}
+   ```
+
+---
+
+## Dockerization
+
+This project is fully Dockerized, allowing it to run consistently across environments.
+
+### Build and Run the Docker Container
+
+1. **Build the Docker Image**:
+   ```bash
+   docker build -t roman-converter-service .
+   ```
+2. **Run the Docker Container**
+   ```bash
+   docker run -p 8080:8080 roman-converter-service
+   ```
+3. **Access the Service:**
    ```bash
    http://localhost:8080/romannumeral?number={integer}
    ```
@@ -77,7 +99,7 @@ A service that will convert a given integer(in the range of 1 - 3999) into its R
 The project is structured as follows:
 
 ```plaintext
-my-express-ts-app
+root
 ├─ logs                     <-- Log files (access.log, error.log)
 │  ├─ access.log            <-- Logs HTTP requests (via Morgan)
 │  └─ error.log             <-- Logs application errors (via Winston)

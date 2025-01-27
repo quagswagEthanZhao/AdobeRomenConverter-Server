@@ -15,6 +15,12 @@ app.use(fileLogger);
 // Route
 app.use('/romannumeral', romanRouter);
 
+// Health check endpoint
+app.get('/health', (req, res) => {
+    res.status(200).json({status: 'UP'});
+})
+
+// Catch all not fount
 app.use((req, res) => {
     res.status(404).json({message: 'Rout not found.'});
 })
