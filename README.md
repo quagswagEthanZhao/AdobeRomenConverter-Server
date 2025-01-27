@@ -1,6 +1,6 @@
 # Adobe Roman Converter Service
 
-A service that will convert a given integer into its Roman numeral format. The service is built using **Node.js**, **Express**, and **TypeScript**. It includes features such as input validation, error handling, logging, and more.
+A service that will convert a given integer(in the range of 1 - 3999) into its Roman numeral format. The service is built using **Node.js**, **Express**, and **TypeScript**. It includes features such as input validation, error handling, logging, and more.
 
 ---
 
@@ -52,11 +52,11 @@ A service that will convert a given integer into its Roman numeral format. The s
 ### Engineering Methodology
 
 1. **Modular Architecture**:  
-   The project is organized into **modules** (controllers, services, middlewares), which helps maintain a clean and scalable structure.
+   The project is organized into **modules** (controllers, services, middlewares).
 2. **Error Handling**:  
-   Centralized error handling is implemented, which catches all errors, logs them, and returns a consistent error response.
+   Centralized error handling is implemented, which catches all errors, logs them into a log file and return them.
 3. **Logging**:  
-   We use **Winston** to log application-level errors and **Morgan** for logging HTTP requests. Logs are stored in the `logs/` folder.
+   We use **Winston** to log application-level errors and **Morgan** for logging HTTP requests. Logs are stored in the `logs/` folder and will be auto generated if not exist.
 4. **Input Validation**:  
    The service validates the input query parameter `number`, ensuring that it is a valid integer between 1 and 3999.
 5. **Response Standardization**:  
@@ -66,8 +66,7 @@ A service that will convert a given integer into its Roman numeral format. The s
 
 1. **Unit Testing**:  
    We use **Jest** for unit testing, with mocks and assertions. We test both **business logic** (e.g., `convertToRoman`) and **controller logic** (e.g., `convertNumberController`).
-2. **Integration Testing**:  
-   **Supertest** is used for testing HTTP routes, ensuring that our controllers work as expected when handling HTTP requests.
+2. **Integration Testing**:
 3. **Test Coverage**:  
    The tests cover a wide range of cases, including valid inputs, invalid inputs, edge cases, and error handling.
 
