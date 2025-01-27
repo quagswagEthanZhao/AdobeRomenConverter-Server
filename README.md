@@ -31,8 +31,7 @@ A service that will convert a given integer(in the range of 1 - 3999) into its R
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/adoberomanconverter-service.git
-   cd adoberomanconverter-service
+   git clone https://github.com/quagswagEthanZhao/AdobeRomenConverter-Server.git
    ```
 2. **Install Dependencies**:
    ```bash
