@@ -22,6 +22,7 @@ A service that will convert a given integer(in the range of 1 - 3999) into its R
 - **TypeScript** (for development)
 - **Winston** (for logging)
 - **Morgan** (for HTTP request logging)
+- **Cors** (enable cors)
 - **Jest** (for testing)
 
 ---
@@ -135,5 +136,6 @@ root
 - **supertest**: A library to test HTTP requests in Node.js.
 - **ts-jest**: TypeScript preprocessor for Jest.
 - **typescript**: TypeScript compiler for statically typed JavaScript.
+- **cors**: Enable Cors
 
 ---
