@@ -45,6 +45,8 @@ A service that will convert a given integer into its Roman numeral format. The s
    http://localhost:8080/romannumeral?number={integer}
    ```
 
+---
+
 ## Engineering and Testing Methodology
 
 ### Engineering Methodology
@@ -75,26 +77,29 @@ A service that will convert a given integer into its Roman numeral format. The s
 
 The project is structured as follows:
 
+```plaintext
 my-express-ts-app
-├─ logs <-- Log files (access.log, error.log)
-│ ├─ access.log <-- Logs HTTP requests (via Morgan)
-│ └─ error.log <-- Logs application errors (via Winston)
+├─ logs                     <-- Log files (access.log, error.log)
+│  ├─ access.log            <-- Logs HTTP requests (via Morgan)
+│  └─ error.log             <-- Logs application errors (via Winston)
 ├─ src
-│ ├─ config <-- Configuration files
-│ ├─ constants <-- Constants such as roman numeral mappings
-│ ├─ controllers <-- Route handlers and business logic
-│ ├─ middlewares <-- Middleware (error handling, logging)
-│ ├─ models <-- Data models (if needed)
-│ ├─ routes <-- Express route definitions
-│ ├─ services <-- Core business logic (e.g., roman numeral conversion)
-│ ├─ utils <-- Utility functions (e.g., logging setup)
-│ ├─ app.ts <-- Main application setup (Express server)
-│ └─ server.ts <-- Entry point to start the server
-├─ .env <-- Environment variables (e.g., port, database URI)
-├─ .gitignore <-- Git ignore file (logs, node_modules, etc.)
-├─ package.json <-- NPM package configuration
-├─ package-lock.json <-- NPM lock file
-└─ tsconfig.json <-- TypeScript configuration
+│  ├─ config                <-- Configuration files
+│  ├─ constants             <-- Constants such as roman numeral mappings
+│  ├─ controllers           <-- Route handlers and business logic
+│  ├─ middlewares           <-- Middleware (error handling, logging)
+│  ├─ models                <-- Data models (if needed)
+│  ├─ routes                <-- Express route definitions
+│  ├─ services              <-- Core business logic (e.g., roman numeral conversion)
+│  ├─ utils                 <-- Utility functions (e.g., logging setup)
+│  ├─ app.ts                <-- Main application setup (Express server)
+│  └─ server.ts             <-- Entry point to start the server
+├─ .env                     <-- Environment variables (e.g., port, database URI)
+├─ .gitignore               <-- Git ignore file (logs, node_modules, etc.)
+├─ package.json             <-- NPM package configuration
+├─ package-lock.json        <-- NPM lock file
+└─ tsconfig.json            <-- TypeScript configuration
+
+---
 
 ## Dependency Attribution
 
@@ -108,3 +113,4 @@ my-express-ts-app
 - **supertest**: A library to test HTTP requests in Node.js.
 - **ts-jest**: TypeScript preprocessor for Jest.
 - **typescript**: TypeScript compiler for statically typed JavaScript.
+```
