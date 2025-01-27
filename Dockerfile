@@ -1,4 +1,4 @@
-# Stage 1: Build the application
+# Build the application
 FROM node:16 AS builder
 WORKDIR /app
 
@@ -12,7 +12,7 @@ COPY . .
 # Build the app
 RUN npm run build
 
-# Stage 2: Create a minimal production image
+# Create a minimal production image
 FROM node:16
 WORKDIR /app
 
