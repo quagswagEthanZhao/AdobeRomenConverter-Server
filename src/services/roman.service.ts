@@ -2,6 +2,21 @@ import {romanMap} from '../constants/roman.constants';
 
 /**
  * Converts a positive integer to its Roman numeral representation.
+ * Roman numeral rules are based on the specification from:
+ * https://en.wikipedia.org/wiki/Roman_numerals
+ *
+ * Symbols:
+ * - I = 1
+ * - V = 5
+ * - X = 10
+ * - L = 50
+ * - C = 100
+ * - D = 500
+ * - M = 1000
+ * 
+ * Rules:
+ * - Additive: Smaller values are added when placed after larger values (e.g., VI = 6).
+ * - Subtractive: Smaller values are subtracted when placed before larger values (e.g., IV = 4).
  * 
  * @param num - The positive integer to be converted (should be >= 1).
  * @returns The Roman numeral as a string.

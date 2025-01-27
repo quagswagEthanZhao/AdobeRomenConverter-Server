@@ -2,12 +2,10 @@
 
 A service that will convert a given integer(in the range of 1 - 3999) into its Roman numeral format. The service is built using **Node.js**, **Express**, and **TypeScript**. It includes features such as input validation, error handling, logging, and more.
 
----
-
-## References
-
 - **Roman Numerals Specification**:  
   The implementation of Roman numerals in this project follows the rules outlined on [Wikipedia: Roman Numerals](https://en.wikipedia.org/wiki/Roman_numerals).
+
+---
 
 ## Table of Contents
 
