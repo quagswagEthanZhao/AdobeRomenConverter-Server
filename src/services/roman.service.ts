@@ -7,6 +7,7 @@ import {romanMap} from '../constants/roman.constants';
  * @returns The Roman numeral as a string.
  */
 export const convertToRoman = (num: number): string => {
+    if (num <= 0 || num > 3999) throw new Error(`"${num}" must be in the range of 1-3999`)
     const res = [];
 
     for (let i = romanMap.length - 1; i >= 0; i --){
