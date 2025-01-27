@@ -1,6 +1,6 @@
 # Adobe Roman Converter Service
 
-This project provides a service that converts a given integer into its Roman numeral representation. The service is built using **Node.js**, **Express**, and **TypeScript**. It includes features such as input validation, error handling, logging, and more.
+A service that will convert a given integer into its Roman numeral format. The service is built using **Node.js**, **Express**, and **TypeScript**. It includes features such as input validation, error handling, logging, and more.
 
 ---
 
