@@ -4,6 +4,11 @@ A service that will convert a given integer(in the range of 1 - 3999) into its R
 
 ---
 
+## References
+
+- **Roman Numerals Specification**:  
+  The implementation of Roman numerals in this project follows the rules outlined on [Wikipedia: Roman Numerals](https://en.wikipedia.org/wiki/Roman_numerals).
+
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
