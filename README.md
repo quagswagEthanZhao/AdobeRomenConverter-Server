@@ -33,13 +33,13 @@ A service that will convert a given integer(in the range of 1 - 3999) into its R
    ```bash
    git clone https://github.com/quagswagEthanZhao/AdobeRomenConverter-Server.git
    ```
-2. **Run the build command to compile the TypeScript code into JavaScript:**
-   ```bash
-   npm run build
-   ```
-3. **Install Dependencies**:
+2. **Install Dependencies**:
    ```bash
    npm install
+   ```
+3. **Run the build command to compile the TypeScript code into JavaScript:**
+   ```bash
+   npm run build
    ```
 4. **Run Project Locally**
    ```bash
