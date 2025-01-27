@@ -115,6 +115,4 @@ my-express-ts-app
 - **ts-jest**: TypeScript preprocessor for Jest.
 - **typescript**: TypeScript compiler for statically typed JavaScript.
 
-```
-
-```
+---
