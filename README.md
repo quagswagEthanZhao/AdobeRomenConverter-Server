@@ -98,6 +98,7 @@ my-express-ts-app
 ├─ package.json             <-- NPM package configuration
 ├─ package-lock.json        <-- NPM lock file
 └─ tsconfig.json            <-- TypeScript configuration
+```
 
 ---
 
@@ -113,4 +114,7 @@ my-express-ts-app
 - **supertest**: A library to test HTTP requests in Node.js.
 - **ts-jest**: TypeScript preprocessor for Jest.
 - **typescript**: TypeScript compiler for statically typed JavaScript.
+
+```
+
 ```
