@@ -1,5 +1,4 @@
 import { Request, Response, NextFunction } from 'express';
-import { fileLogger } from './logging.middleware';
 import logger from '../utils/logger';
 
 export const errorHandler = (error : any, req: Request, res: Response, next: NextFunction) : void => {
