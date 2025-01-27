@@ -33,15 +33,19 @@ A service that will convert a given integer(in the range of 1 - 3999) into its R
    ```bash
    git clone https://github.com/quagswagEthanZhao/AdobeRomenConverter-Server.git
    ```
-2. **Install Dependencies**:
+2. **Run the build command to compile the TypeScript code into JavaScript:**
+   ```bash
+   npm run build
+   ```
+3. **Install Dependencies**:
    ```bash
    npm install
    ```
-3. **Run Project Locally**
+4. **Run Project Locally**
    ```bash
    npm run dev
    ```
-4. **Access the API: will be avalible in this address and format**
+5. **Access the API: will be avalible in this address and format**
    ```bash
    http://localhost:8080/romannumeral?number={integer}
    ```
